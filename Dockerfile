@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
-MAINTAINER "Yonas Ayalew" <yonas.ayalew@orsoft.com>
+MAINTAINER "Ipatios Asmanidis" <ypasmk@gmail.com>
 
-LABEL name="Docker Build for Robot Framework"
+LABEL name="Docker build for acceptance testing using the robot framework"
 
 RUN apt-get update \
 	&& apt-get install -y build-essential libssl-dev libffi-dev python-dev \
@@ -29,3 +29,4 @@ RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd6
 	&& chmod +x /usr/local/bin/chromedriver
 
 CMD ["/scripts/run_suite.sh"]
+

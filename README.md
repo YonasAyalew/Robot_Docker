@@ -3,6 +3,10 @@
 Quick Start
 ===========
 
+### Clone this repository
+
+    git clone git@github.com:ypasmk/robot-framework-docker.git
+
 ### Pull the image.
 
     docker pull ypasmk/robot-framework

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 docker run --rm \
+           -e USERNAME="Ipatios Asmanidis" \
            --net=host \
            -v "$PWD/output":/output \
            -v "$PWD/suites":/suites \

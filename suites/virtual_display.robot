@@ -1,19 +1,17 @@
 *** Settings ***
-Library     SeleniumLibrary
+Library     Selenium2Library
 Library     XvfbRobot
 
 *** Variables ***
 ${TMP_PATH}                 /tmp
 
-
 *** Test Cases ***
-Open EdgeOne
+Open Google
     Start Virtual Display    1920    1080
     Open Chrome Browser
-    GoTo    https://e1-dev.k8s.myapp.de/ 
+    GoTo    http://google.com
     ${title}=       Get Title
-    Should Be Equal    EdgeOne SSO : Germanedge : Unified Workplace    ${title}
-
+    Should Be Equal    Google    ${title}
 
 *** Keywords ***
 Open Chrome Browser

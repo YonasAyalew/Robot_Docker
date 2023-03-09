@@ -5,7 +5,7 @@ services:
         image: ypasmk/robot-framework
         shm_size: "256M"
         environment:
-            USERNAME: 
+            USERNAME: Ipatios Asmanidis
         volumes: [
            "$PWD/output:/output",
            "$PWD/suites:/suites",
